@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 
 const mf1 =  {
-  entry: "./mf1/main",
+  entry: "./modules/mf1/main",
   mode: "development",
   devServer: {
     contentBase: path.join(__dirname, "dist/mf1"),
@@ -39,12 +39,12 @@ const mf1 =  {
       library: { type: "var", name: "mf1" },
       filename: "remoteEntry.js",
       exposes: {
-        component: "./mf1/component"
+        component: "./modules/mf1/component"
       },
         shared: ["rxjs"]
     }),
     new HtmlWebpackPlugin({
-      template: "./mf1/index.html"
+      template: "./modules/mf1/index.html"
     }),
   ]
 };
