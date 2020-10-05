@@ -16,6 +16,7 @@ Each micro-frontend can be build, deployed, and tested in isolation from each ot
 
 ### Project Structure
 
+```
 root
   |- /modules
   |  '- mf1
@@ -26,6 +27,7 @@ root
   '- webpack.mf1.config.js
   '- webpack.mf2.config.js
   '- ...                      // micro-frontends webpack configs
+```
 
 The shell application loads the individual, separately built and provided microfrontends as needed.
 
